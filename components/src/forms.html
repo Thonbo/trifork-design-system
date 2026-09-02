@@ -1,0 +1,21 @@
+<!-- @dsCard group="Actions" title="Forms" subtitle="Text input, select, textarea, checkbox, radio · orange focus ring" width="720" -->
+<div class="ds-page">
+<section class="ds-section" style="gap: var(--tf-space-4); max-width: 640px">
+  <div class="ds-stack" style="gap: 8px">
+    <p class="ds-label">Actions</p>
+    <h2 class="ds-h2">Forms</h2>
+    <p class="ds-body-sm">Inputs are the one place a visible border is allowed: 2px neutral-200, 12px radius, 48px tall. Focus turns the border orange with a soft orange halo. Labels are SemiBold 14 slate.</p>
+  </div>
+  <div class="field"><label class="field__label">Company</label><input class="input" placeholder="Your company"></div>
+  <div class="field"><label class="field__label">Work email</label><input class="input" value="name@company.com" style="border-color: var(--tf-c-input-border-focus); box-shadow: 0 0 0 3px var(--tf-color-orange-100)"><small class="ds-caption">Focused state</small></div>
+  <div class="field"><label class="field__label">Production line</label><select class="input"><option>Select a line</option><option>Packaging</option><option>Assembly</option></select></div>
+  <div class="field"><label class="field__label">What should we look at first?</label><textarea class="input" rows="3" style="padding: 12px 16px; min-height: 96px; resize: vertical" placeholder="Describe the process"></textarea></div>
+  <div class="ds-row" style="gap: 24px">
+    <label style="display:flex; align-items:center; gap: 10px; font-size: 16px"><input type="checkbox" checked style="width:20px;height:20px;accent-color: var(--tf-color-brand-orange)">Send me the design guide</label>
+    <label style="display:flex; align-items:center; gap: 10px; font-size: 16px"><input type="radio" name="r" checked style="width:20px;height:20px;accent-color: var(--tf-color-brand-orange)">On-site</label>
+    <label style="display:flex; align-items:center; gap: 10px; font-size: 16px"><input type="radio" name="r" style="width:20px;height:20px;accent-color: var(--tf-color-brand-orange)">Remote</label>
+  </div>
+  <div class="field"><label class="field__label" style="color: var(--tf-color-feedback-danger)">Phone</label><input class="input" value="12" style="border-color: var(--tf-color-feedback-danger)"><small class="ds-caption" style="color: var(--tf-color-feedback-danger)">Enter a full number including country code.</small></div>
+  <div class="ds-row" style="gap: 16px"><button class="btn btn--primary">Book a walk-the-line</button><button class="btn btn--ghost">Cancel</button></div>
+</section>
+</div>

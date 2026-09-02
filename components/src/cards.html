@@ -1,0 +1,79 @@
+<!-- @dsCard group="Content" title="Cards" subtitle="Info card, step card (pill + card + footer), stair row, dark card, photo card" width="960" -->
+<div class="ds-page">
+<section class="ds-section ds-section--band" style="gap: var(--tf-space-5)">
+  <div class="ds-stack" style="gap: 8px">
+    <p class="ds-label">Content</p>
+    <h2 class="ds-h2">Cards</h2>
+    <p class="ds-body">White, 20px radius, slate shadow, no border. Title in orange Bold, body in ink. A step card adds a slate pill header above and an off-white duration footer below (Figma "master process unit").</p>
+  </div>
+
+  <div class="ds-stack" style="gap: 8px"><small class="ds-caption">Step cards · header pill + card 20 · centred icon 72 · footer #F3F3F3</small></div>
+  <div class="ds-grid" style="grid-template-columns: repeat(4, 1fr); align-items: stretch">
+    <div class="step">
+      <span class="pill">Step 1</span>
+      <div class="card" style="flex:1">
+        <div class="card__body card__body--centered">
+          <span class="icon icon--hero">{{icon:search-gear}}</span>
+          <h4 class="card__title">Walk the Line</h4>
+          <p class="card__lead">Observe, Listen, Understand</p>
+          <p class="card__text">We want to map your real-world process, side by side with you.</p>
+        </div>
+        <div class="card__footer">1-3 days</div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="pill">Step 2</span>
+      <div class="card" style="flex:1">
+        <div class="card__body card__body--centered">
+          <span class="icon icon--hero">{{icon:scales}}</span>
+          <h4 class="card__title">Explore Possibilities</h4>
+          <p class="card__text">What's realistically possible for your setup.</p>
+        </div>
+        <div class="card__footer">1-3 days</div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="pill">Step 3</span>
+      <div class="card" style="flex:1">
+        <div class="card__body card__body--centered">
+          <span class="icon icon--hero">{{icon:map-route}}</span>
+          <h4 class="card__title">Co-create a Plan</h4>
+          <p class="card__text">Once we understand your flow, we sketch the path forward together.</p>
+        </div>
+        <div class="card__footer">1-2 months</div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="pill pill--accent">Step 9</span>
+      <div class="card card--inverse" style="flex:1">
+        <div class="card__body card__body--centered">
+          <span class="icon icon--hero" style="color:#fff">{{icon:cubes-network}}</span>
+          <h4 class="card__title">Scale up</h4>
+          <p class="card__text">With the capabilities installed as a foundational platform, scaling to several instances is simple.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ds-stack" style="gap: 8px"><small class="ds-caption">Stair rows · icon + vertical pill + card (Figma "How the product builds up")</small></div>
+  <div class="ds-stack" style="gap: 16px">
+    <div class="stair" style="margin-left: 160px">
+      <span class="icon icon--hero" style="align-self:center">{{icon:checklist-document}}</span>
+      <span class="pill pill--vertical">Step 2</span>
+      <div class="card"><div class="card__body"><h4 class="card__title">Lab test</h4><p class="card__text">Once we understand your flow, we sketch the path forward together.</p></div></div>
+    </div>
+    <div class="stair">
+      <span class="icon icon--hero" style="align-self:center">{{icon:search-gear}}</span>
+      <span class="pill pill--vertical">Step 1</span>
+      <div class="card"><div class="card__body" style="flex-direction:row; align-items:baseline; gap: 12px; flex-wrap:wrap"><h4 class="card__title">Walk the Line</h4><p class="card__lead">Observe, Listen, Understand</p><p class="card__text" style="flex-basis:100%">We want to map your real-world process, side by side with you.</p></div></div>
+    </div>
+  </div>
+
+  <div class="ds-stack" style="gap: 8px"><small class="ds-caption">Photo card · image radius 20 · caption below · and a quote card</small></div>
+  <div class="ds-grid" style="grid-template-columns: 1fr 1fr 1fr">
+    <div class="card"><div class="card__media bg-bokeh-img" style="background-image:url('{{bokeh:2}}')"></div><div class="card__body"><h4 class="card__title">Training the next generation of <span class="ds-accent">rail employees</span></h4><p class="card__text">Exploring how Apple Vision Pro can revolutionise training in railway operations.</p></div></div>
+    <div class="card card--inverse"><div class="card__body"><p class="ds-label">Upcoming presentation</p><h3 class="ds-h3" style="color:#fff; font-weight:700">Q4 and Annual Report 2025</h3><p class="card__text" style="margin-top:auto; font-size:14px">27 Feb 2026 · 11:00 - 12:00 (CEST)</p></div></div>
+    <div class="card"><div class="card__body"><p class="ds-display" style="font-size:48px; line-height:1">81%</p><p class="card__text">of interviewed business leaders see a significant business potential.</p><p class="ds-display" style="font-size:48px; line-height:1">5%</p><p class="card__text">have moved beyond POCs and deployed AI solutions to production.</p></div></div>
+  </div>
+</section>
+</div>

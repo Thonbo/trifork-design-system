@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-3.00 -12.20 105.05 105.05" fill="none" stroke="currentColor" aria-hidden="true">
+<g>
+<rect x="3" y="3" width="93.0486" height="24.8805" rx="6" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+<rect x="3" y="27.8806" width="93.0486" height="24.8805" rx="6" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+<rect x="3" y="52.7612" width="93.0486" height="24.8805" rx="6" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+<g>
+<circle cx="64.7948" cy="15.4403" r="2.56696" fill="currentColor"/>
+<circle cx="73.1549" cy="15.44" r="2.56696" fill="currentColor"/>
+<circle cx="81.515" cy="40.3206" r="2.56696" fill="currentColor"/>
+<circle cx="81.515" cy="65.2012" r="2.56696" fill="currentColor"/>
+<circle cx="73.1549" cy="65.2012" r="2.56696" fill="currentColor"/>
+<circle cx="81.515" cy="15.44" r="2.56696" fill="currentColor"/>
+</g>
+<path d="M35.1159 15.4402L15.771 15.4402" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+<path d="M35.1159 40.3208H15.771" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+<path d="M35.1159 65.2014H15.771" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+</g>
+</svg>

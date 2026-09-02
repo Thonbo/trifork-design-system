@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-3.00 -7.96 106.32 106.32" fill="none" stroke="currentColor" aria-hidden="true">
+<g>
+<path d="M97.3188 22.8566V13C97.3188 7.47715 92.8417 3 87.3188 3H13C7.47715 3 3 7.47716 3 13V22.8566M97.3188 22.8566V77.3906C97.3188 82.9135 92.8417 87.3906 87.3188 87.3906H13C7.47715 87.3906 3 82.9135 3 77.3906V22.8566M97.3188 22.8566H3" stroke="currentColor" stroke-width="6"/>
+<g>
+<path d="M28.1039 42.4155L17.0179 55.1566L28.2084 67.6636" stroke="currentColor" stroke-width="5.64363" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M72.2149 42.4155L83.301 55.1566L72.1104 67.6636" stroke="currentColor" stroke-width="5.64363" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M57.4785 36.4514L43.6387 76.306" stroke="currentColor" stroke-width="5.64363" stroke-linecap="round"/>
+</g>
+<circle cx="13.7035" cy="13.2505" r="3" fill="currentColor"/>
+<circle cx="24.0374" cy="13.2505" r="3" fill="currentColor"/>
+<circle cx="34.3714" cy="13.2505" r="3" fill="currentColor"/>
+</g>
+</svg>

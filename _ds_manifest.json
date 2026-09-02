@@ -1,0 +1,169 @@
+{
+  "name": "Trifork Design System",
+  "generatedAt": "2026-09-02T09:01:25.171Z",
+  "cards": [
+    {
+      "name": "Buttons",
+      "path": "components/buttons/index.html",
+      "group": "Actions",
+      "subtitle": "Primary, outline label, dark, ghost, on-dark · 3 sizes · states",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Cards",
+      "path": "components/cards/index.html",
+      "group": "Content",
+      "subtitle": "Info card, step card (pill + card + footer), stair row, dark card, photo card",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Colors",
+      "path": "components/colors/index.html",
+      "group": "Foundations",
+      "subtitle": "Core brand, slate UI, neutrals, extended palette, product families",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Elevation & backgrounds",
+      "path": "components/elevation-backgrounds/index.html",
+      "group": "Foundations",
+      "subtitle": "Slate-tinted shadows, bokeh backgrounds (Component 5), fades and gradients",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Forms",
+      "path": "components/forms/index.html",
+      "group": "Actions",
+      "subtitle": "Text input, select, textarea, checkbox, radio · orange focus ring",
+      "viewport": {
+        "width": 720
+      }
+    },
+    {
+      "name": "Hero & sections",
+      "path": "components/hero-sections/index.html",
+      "group": "Layout",
+      "subtitle": "Video hero with slate fade, title/subtitle stack, alternating white / light-blue / slate bands, footer",
+      "viewport": {
+        "width": 960,
+        "height": 1400
+      }
+    },
+    {
+      "name": "People & structure",
+      "path": "components/people/index.html",
+      "group": "Content",
+      "subtitle": "Profile card, avatar list, team grid, org chart, testimonial",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Pills, chips & badges",
+      "path": "components/pills-chips/index.html",
+      "group": "Actions",
+      "subtitle": "Step pills (slate / orange / vertical), white chips, hero tabs, status badges",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Product tiles & diagrams",
+      "path": "components/product-tiles/index.html",
+      "group": "Content",
+      "subtitle": "3D gradient tiles (blue / green / purple), MCP stack diagram, proof-in-production bars",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Cover & closing slides",
+      "path": "components/slides-covers/index.html",
+      "group": "Slides",
+      "subtitle": "Cover with image / dark card / photo card, logo outro, Thank you with contact",
+      "viewport": {
+        "width": 1000
+      }
+    },
+    {
+      "name": "Numbers, cards & tables",
+      "path": "components/slides-numbers-cards/index.html",
+      "group": "Slides",
+      "subtitle": "Big KPI numbers (4-up, cards, 2x2, list), icon cards, image cards, table, icon rows and grid",
+      "viewport": {
+        "width": 1000
+      }
+    },
+    {
+      "name": "People, quotes, cases & logos",
+      "path": "components/slides-people-story/index.html",
+      "group": "Slides",
+      "subtitle": "Statement, quote with avatar, team mosaics, product & case slides, logo grid",
+      "viewport": {
+        "width": 1000
+      }
+    },
+    {
+      "name": "Agenda & section slides",
+      "path": "components/slides-structure/index.html",
+      "group": "Slides",
+      "subtitle": "Agenda with orange numbers, section list, section titles on light / dark / orange / photo",
+      "viewport": {
+        "width": 1000
+      }
+    },
+    {
+      "name": "Text, bullets & columns",
+      "path": "components/slides-text/index.html",
+      "group": "Slides",
+      "subtitle": "Title + intro + orange-dash bullets, image + text, 2-4 columns, numbered columns",
+      "viewport": {
+        "width": 1000
+      }
+    },
+    {
+      "name": "Spacing & corner radius",
+      "path": "components/spacing-radius/index.html",
+      "group": "Foundations",
+      "subtitle": "8px grid, 12/20/24px radii, pill controls",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Typography",
+      "path": "components/typography/index.html",
+      "group": "Foundations",
+      "subtitle": "Poppins scale, label style, editorial vs product headlines",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Product icons (Figma)",
+      "path": "components/icons/index.html",
+      "group": "Icons",
+      "subtitle": "37 line icons from the Vision AI sandbox, 100-grid, 6px stroke",
+      "viewport": {
+        "width": 960
+      }
+    },
+    {
+      "name": "Brand icons (brand.trifork.com)",
+      "path": "components/icons-brand/index.html",
+      "group": "Icons",
+      "subtitle": "113 official line icons, 40-grid, 1.8px stroke",
+      "viewport": {
+        "width": 960
+      }
+    }
+  ]
+}

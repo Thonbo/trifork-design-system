@@ -1,0 +1,466 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Trifork design tokens. Three tiers: primitive (raw values) -> semantic (intent) -> component (UI scoped). Sources: brand.trifork.com Design Guide (March 2026) and the Figma sandbox 'Trifork / Vision AI' (WH67wv40VWYN27v9yzsaG4). Edit this file, then run `node scripts/build.mjs`.",
+
+  "primitive": {
+    "color": {
+      "brand": {
+        "darkBlue": { "$type": "color", "$value": "#2C3A42", "$description": "Official brand dark blue (Pantone 432 C). Titles, body text, selected backgrounds." },
+        "orange": { "$type": "color", "$value": "#FF6600", "$description": "Official brand accent (Pantone 16-1358 TCX). Labels, key details, CTAs." },
+        "lightBlue": { "$type": "color", "$value": "#D5E5ED", "$description": "Official brand light blue (Pantone 9420 C). Digital background colour." }
+      },
+      "slate": {
+        "$description": "The working dark blue used throughout the Figma sandbox for dark cards, pills, icons and headings. Slightly lighter and bluer than the official brand dark blue; use it for UI surfaces, keep #2C3A42 for logo and print.",
+        "700": { "$type": "color", "$value": "#425663" },
+        "600": { "$type": "color", "$value": "#52788F" },
+        "500": { "$type": "color", "$value": "#728D9D" },
+        "400": { "$type": "color", "$value": "#5F7D8F" }
+      },
+      "ink": { "$type": "color", "$value": "#373737", "$description": "Body copy colour used in the Figma sandbox (near-black warm grey)." },
+      "slideText": { "$type": "color", "$value": "#4D5B64", "$description": "Body copy colour in the official slide template (Poppins 17pt)." },
+      "slideMuted": { "$type": "color", "$value": "#D5D7DA", "$description": "Secondary text on dark slides." },
+      "white": { "$type": "color", "$value": "#FFFFFF" },
+      "neutral": {
+        "$description": "Neutral ramp from the brand guide (10 stops, dark to light).",
+        "900": { "$type": "color", "$value": "#2C3A42" },
+        "800": { "$type": "color", "$value": "#414E55" },
+        "700": { "$type": "color", "$value": "#566168" },
+        "600": { "$type": "color", "$value": "#6B757B" },
+        "500": { "$type": "color", "$value": "#80898E" },
+        "400": { "$type": "color", "$value": "#959CA0" },
+        "300": { "$type": "color", "$value": "#ABB0B3" },
+        "200": { "$type": "color", "$value": "#C0C4C6" },
+        "100": { "$type": "color", "$value": "#D5D8D9" },
+        "50":  { "$type": "color", "$value": "#EAEBEC" }
+      },
+      "surfaceTint": {
+        "$description": "Light UI surfaces observed in the Figma sandbox.",
+        "offWhite": { "$type": "color", "$value": "#F3F3F3", "$description": "Card footers, quiet bands." },
+        "paper":    { "$type": "color", "$value": "#F2F2F2" },
+        "pale":     { "$type": "color", "$value": "#E7EFF3", "$description": "Section background between white and light blue." },
+        "mist":     { "$type": "color", "$value": "#E9F0F4" },
+        "band":     { "$type": "color", "$value": "#D7E4EB", "$description": "The light-blue page/section background used on every Figma page (brand light blue #D5E5ED rendered on screen)." }
+      },
+      "blue": {
+        "$description": "Extended palette, blue column (brand guide).",
+        "900": { "$type": "color", "$value": "#3C4C54" },
+        "800": { "$type": "color", "$value": "#5B717F" },
+        "700": { "$type": "color", "$value": "#7997A9" },
+        "600": { "$type": "color", "$value": "#88AABE" },
+        "500": { "$type": "color", "$value": "#97BDD3" },
+        "400": { "$type": "color", "$value": "#A1C4D7" },
+        "300": { "$type": "color", "$value": "#ACCADC" },
+        "200": { "$type": "color", "$value": "#C1D7E5" },
+        "100": { "$type": "color", "$value": "#D5E5ED" },
+        "50":  { "$type": "color", "$value": "#EAF2F6" }
+      },
+      "orange": {
+        "$description": "Extended palette, orange column (brand guide).",
+        "900": { "$type": "color", "$value": "#662900" },
+        "800": { "$type": "color", "$value": "#993D00" },
+        "700": { "$type": "color", "$value": "#CC5200" },
+        "600": { "$type": "color", "$value": "#E55C00" },
+        "500": { "$type": "color", "$value": "#FF6600" },
+        "400": { "$type": "color", "$value": "#FF751A" },
+        "300": { "$type": "color", "$value": "#FF8533" },
+        "200": { "$type": "color", "$value": "#FFA366" },
+        "100": { "$type": "color", "$value": "#FFD1B2" },
+        "50":  { "$type": "color", "$value": "#FFE8D9" }
+      },
+      "green": {
+        "$description": "Extended palette, green column (brand guide; 700 interpolated where the guide repeats a value).",
+        "900": { "$type": "color", "$value": "#364C31" },
+        "800": { "$type": "color", "$value": "#51724A" },
+        "700": { "$type": "color", "$value": "#6A9463" },
+        "600": { "$type": "color", "$value": "#7AAB6F" },
+        "500": { "$type": "color", "$value": "#87BE7B" },
+        "400": { "$type": "color", "$value": "#93C488" },
+        "300": { "$type": "color", "$value": "#9FCB95" },
+        "200": { "$type": "color", "$value": "#B7D8B0" },
+        "100": { "$type": "color", "$value": "#CFE5CA" },
+        "50":  { "$type": "color", "$value": "#E7F2E5" }
+      },
+      "product": {
+        "$description": "Three product families used for the 3D product tiles in Figma (blue = Quality management, green = Asset inspection, purple = Safety).",
+        "blue":   { "dark": { "$type": "color", "$value": "#385A72" }, "mid": { "$type": "color", "$value": "#52788F" }, "light": { "$type": "color", "$value": "#71A2BD" }, "tintStart": { "$type": "color", "$value": "#F4F8FA" }, "tintEnd": { "$type": "color", "$value": "#E7EFF3" } },
+        "green":  { "dark": { "$type": "color", "$value": "#457055" }, "mid": { "$type": "color", "$value": "#618671" }, "light": { "$type": "color", "$value": "#80AF97" }, "tintStart": { "$type": "color", "$value": "#F8FBF9" }, "tintEnd": { "$type": "color", "$value": "#EAF2ED" } },
+        "purple": { "dark": { "$type": "color", "$value": "#89459F" }, "mid": { "$type": "color", "$value": "#9350A4" }, "light": { "$type": "color", "$value": "#C172D1" }, "tintStart": { "$type": "color", "$value": "#FDF8FF" }, "tintEnd": { "$type": "color", "$value": "#F9E5FD" } }
+      },
+      "chart": {
+        "$description": "Soft area-chart fills from the Figma 'value vs complexity' diagram (drawn at 50% opacity).",
+        "valueBlue": { "$type": "color", "$value": "#87CCEE" },
+        "complexityPeach": { "$type": "color", "$value": "#EEA287" }
+      },
+      "feedback": {
+        "success": { "$type": "color", "$value": "#4ECA00" },
+        "danger":  { "$type": "color", "$value": "#CA0003" }
+      }
+    },
+
+    "gradient": {
+      "$description": "CSS gradients extracted from Figma fills. Angles converted from Figma gradient transforms.",
+      "fadeSlateUp":     { "$type": "string", "$value": "linear-gradient(180deg, rgba(66,86,99,0) 0%, rgba(66,86,99,1) 100%)", "$description": "Hero/banner overlay: transparent at top, solid slate at bottom so white text stays readable over video or photo." },
+      "fadeSlateDown":   { "$type": "string", "$value": "linear-gradient(180deg, rgba(66,86,99,1) 0%, rgba(66,86,99,0) 100%)", "$description": "Vertical divider fading out (Group 51 / Frame 361 components)." },
+      "fadeSlateSoft":   { "$type": "string", "$value": "linear-gradient(180deg, rgba(66,86,99,0) 0%, rgba(66,86,99,0.3) 100%)", "$description": "Soft blurred shadow under 3D tiles." },
+      "fadeBandRight":   { "$type": "string", "$value": "linear-gradient(90deg, #D7E4EB 0%, rgba(215,228,235,0) 100%)", "$description": "Divider fade used between process steps." },
+      "productBlue":     { "$type": "string", "$value": "linear-gradient(135deg, #52788F 0%, #71A2BD 44%, #385A72 64%)" },
+      "productGreen":    { "$type": "string", "$value": "linear-gradient(135deg, #618671 0%, #80AF97 44%, #457055 64%)" },
+      "productPurple":   { "$type": "string", "$value": "linear-gradient(135deg, #9350A4 0%, #C172D1 44%, #89459F 64%)" },
+      "tileTopBlue":     { "$type": "string", "$value": "linear-gradient(180deg, #F4F8FA 0%, #E7EFF3 100%)" },
+      "tileTopGreen":    { "$type": "string", "$value": "linear-gradient(180deg, #F8FBF9 0%, #EAF2ED 100%)" },
+      "tileTopPurple":   { "$type": "string", "$value": "linear-gradient(180deg, #FDF8FF 0%, #F9E5FD 100%)" },
+      "bokehCss":        { "$type": "string", "$value": "radial-gradient(60% 70% at 20% 25%, #E8F2F8 0%, rgba(232,242,248,0) 70%), radial-gradient(45% 55% at 78% 72%, #F3EEE8 0%, rgba(243,238,232,0) 70%), radial-gradient(70% 80% at 65% 20%, #C6D9E2 0%, rgba(198,217,226,0) 75%), linear-gradient(160deg, #DCE8EE 0%, #D5E3EB 55%, #CFDEE7 100%)", "$description": "Pure-CSS approximation of the Component 5 bokeh backgrounds (light blue field with soft white and warm-cream blooms). Use when the JPG is not available." }
+    },
+
+    "font": {
+      "family": {
+        "sans":  { "$type": "fontFamily", "$value": ["Poppins", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif"], "$description": "Primary typeface for everything (brand guide)." },
+        "quote": { "$type": "fontFamily", "$value": ["Caveat", "Segoe Script", "cursive"], "$description": "Handwritten face reserved for quotes in presentations (brand.trifork.com/typography)." },
+        "mono":  { "$type": "fontFamily", "$value": ["JetBrains Mono", "Consolas", "monospace"] }
+      },
+      "weight": {
+        "light":    { "$type": "fontWeight", "$value": 300, "$description": "Only for the big orange agenda / column numbers on slides." },
+        "regular":  { "$type": "fontWeight", "$value": 400 },
+        "medium":   { "$type": "fontWeight", "$value": 500 },
+        "semibold": { "$type": "fontWeight", "$value": 600 },
+        "bold":     { "$type": "fontWeight", "$value": 700 }
+      },
+      "size": {
+        "$description": "Web scale. Figma values were authored on a 1728px canvas; web values are Figma x 0.75 rounded to the 8/4 grid.",
+        "display": { "$type": "dimension", "$value": "56px" },
+        "h1":      { "$type": "dimension", "$value": "48px", "$description": "Figma 64/65px section titles." },
+        "h2":      { "$type": "dimension", "$value": "36px", "$description": "Figma 48-51px." },
+        "h3":      { "$type": "dimension", "$value": "28px", "$description": "Figma 36px subtitles / step pills." },
+        "h4":      { "$type": "dimension", "$value": "22px", "$description": "Figma 29px card titles." },
+        "bodyLg":  { "$type": "dimension", "$value": "20px" },
+        "body":    { "$type": "dimension", "$value": "18px", "$description": "Figma 24px card copy." },
+        "bodySm":  { "$type": "dimension", "$value": "16px" },
+        "caption": { "$type": "dimension", "$value": "14px" },
+        "label":   { "$type": "dimension", "$value": "13px", "$description": "All-caps label." }
+      },
+      "lineHeight": {
+        "tight":  { "$type": "number", "$value": 1.1 },
+        "snug":   { "$type": "number", "$value": 1.2, "$description": "Figma card text." },
+        "title":  { "$type": "number", "$value": 1.32, "$description": "Figma titles and subtitles." },
+        "normal": { "$type": "number", "$value": 1.5 },
+        "relaxed":{ "$type": "number", "$value": 1.6 }
+      },
+      "letterSpacing": {
+        "tight":  { "$type": "dimension", "$value": "-0.02em", "$description": "Figma -2px on 64-100px type, -0.64px on 29-36px type." },
+        "normal": { "$type": "dimension", "$value": "0em" },
+        "label":  { "$type": "dimension", "$value": "0.15em", "$description": "Brand rule: Poppins SemiBold, all caps, 15% tracking." }
+      }
+    },
+
+    "space": {
+      "$description": "8px base unit (brand guide). Half step (4px) allowed for icon/label micro-spacing.",
+      "0":  { "$type": "dimension", "$value": "0px" },
+      "05": { "$type": "dimension", "$value": "4px" },
+      "1":  { "$type": "dimension", "$value": "8px" },
+      "2":  { "$type": "dimension", "$value": "16px" },
+      "3":  { "$type": "dimension", "$value": "24px" },
+      "4":  { "$type": "dimension", "$value": "32px" },
+      "5":  { "$type": "dimension", "$value": "40px" },
+      "6":  { "$type": "dimension", "$value": "48px" },
+      "8":  { "$type": "dimension", "$value": "64px" },
+      "10": { "$type": "dimension", "$value": "80px" },
+      "12": { "$type": "dimension", "$value": "96px" },
+      "16": { "$type": "dimension", "$value": "128px" }
+    },
+
+    "radius": {
+      "$description": "Brand rule: 12px for elements below 200px, 24px above. Figma practice: 20px on cards, full pill on step headers, chips and tabs.",
+      "xs":   { "$type": "dimension", "$value": "4px", "$description": "Tiny squares, legend swatches." },
+      "sm":   { "$type": "dimension", "$value": "12px" },
+      "md":   { "$type": "dimension", "$value": "20px" },
+      "lg":   { "$type": "dimension", "$value": "24px" },
+      "xl":   { "$type": "dimension", "$value": "28px" },
+      "pill": { "$type": "dimension", "$value": "999px" }
+    },
+
+    "border": {
+      "hairline": { "$type": "dimension", "$value": "1px" },
+      "regular":  { "$type": "dimension", "$value": "2px" },
+      "strong":   { "$type": "dimension", "$value": "3px" }
+    },
+
+    "shadow": {
+      "$description": "All shadows are tinted slate, never pure black. Offsets are near zero; blur does the work.",
+      "card":  { "$type": "shadow", "$value": "0 4px 36px rgba(66, 86, 99, 0.20)", "$description": "Most common Figma card shadow (0/3.87 blur 34.8 #425663 20%)." },
+      "soft":  { "$type": "shadow", "$value": "0 1px 32px rgba(114, 141, 157, 0.10), 0 1px 8px rgba(95, 125, 143, 0.20)", "$description": "Figma effect style 'Drop Shadow'. Product tiles and floating chips." },
+      "glow":  { "$type": "shadow", "$value": "0 0 32px rgba(66, 86, 99, 0.30), 0 0 8px rgba(66, 86, 99, 0.40)", "$description": "Halo under 3D tiles and hover state." },
+      "lift":  { "$type": "shadow", "$value": "0 2px 20px rgba(66, 86, 99, 0.20)" },
+      "textOnImage": { "$type": "shadow", "$value": "0 2px 16px rgba(0, 0, 0, 0.55)", "$description": "Hero title/subtitle over video or photo." }
+    },
+
+    "blur": {
+      "sm": { "$type": "dimension", "$value": "4px" },
+      "md": { "$type": "dimension", "$value": "16px" },
+      "lg": { "$type": "dimension", "$value": "32px" }
+    },
+
+    "motion": {
+      "duration": {
+        "fast":   { "$type": "duration", "$value": "120ms" },
+        "normal": { "$type": "duration", "$value": "200ms" },
+        "slow":   { "$type": "duration", "$value": "320ms" }
+      },
+      "easing": {
+        "standard": { "$type": "cubicBezier", "$value": [0.2, 0, 0, 1] },
+        "enter":    { "$type": "cubicBezier", "$value": [0, 0, 0.2, 1] },
+        "exit":     { "$type": "cubicBezier", "$value": [0.4, 0, 1, 1] }
+      }
+    },
+
+    "icon": {
+      "$description": "Icons are drawn on a 100x100 grid with a 6px uniform stroke (= 1.44px at 24px, 3px at 50px). Round caps and joins. Monochrome, always one colour.",
+      "size": {
+        "sm": { "$type": "dimension", "$value": "20px" },
+        "md": { "$type": "dimension", "$value": "24px", "$description": "Inline with text, buttons." },
+        "lg": { "$type": "dimension", "$value": "32px" },
+        "xl": { "$type": "dimension", "$value": "48px", "$description": "Card headers." },
+        "hero": { "$type": "dimension", "$value": "72px", "$description": "Feature cards, stair steps (Figma 100px at 0.75)." }
+      },
+      "strokeOn100Grid": { "$type": "dimension", "$value": "6px" },
+      "strokeAt24": { "$type": "dimension", "$value": "1.5px" }
+    },
+
+    "slide": {
+      "$description": "Presentation canvas measured from the official General Template (Trifork-Presentation-Template-1.pptx, 1920x1080). All values in canvas px.",
+      "width":   { "$type": "dimension", "$value": "1920px" },
+      "height":  { "$type": "dimension", "$value": "1080px" },
+      "margin":  { "$type": "dimension", "$value": "80px", "$description": "Left/right margin; label sits at y72, title at y141." },
+      "indent":  { "$type": "dimension", "$value": "64px", "$description": "Body copy is indented 64px from the title (x144)." },
+      "titleTop":{ "$type": "dimension", "$value": "141px" },
+      "labelTop":{ "$type": "dimension", "$value": "72px" },
+      "footerBottom": { "$type": "dimension", "$value": "68px", "$description": "Slide number / presentation label baseline area." },
+      "logoWidth":  { "$type": "dimension", "$value": "125px" },
+      "logoHeight": { "$type": "dimension", "$value": "12px" },
+      "logoRight":  { "$type": "dimension", "$value": "73px" },
+      "logoBottom": { "$type": "dimension", "$value": "56px" },
+      "radius":     { "$type": "dimension", "$value": "44px", "$description": "Cards, photo tiles, tables (PowerPoint adj 0.10-0.12 on ~400px)." },
+      "radiusSm":   { "$type": "dimension", "$value": "24px", "$description": "Logo cards, small chips." },
+      "gap":        { "$type": "dimension", "$value": "32px" },
+      "gapLg":      { "$type": "dimension", "$value": "64px" },
+      "cardPad":    { "$type": "dimension", "$value": "32px" },
+      "bulletDashWidth": { "$type": "dimension", "$value": "60px" },
+      "bulletDashHeight": { "$type": "dimension", "$value": "3px" },
+      "bulletIndent": { "$type": "dimension", "$value": "90px" },
+      "agendaRow":  { "$type": "dimension", "$value": "114px" },
+      "avatar":     { "$type": "dimension", "$value": "86px" },
+      "font": {
+        "$description": "pt in PowerPoint x 1.333 = canvas px.",
+        "h0":       { "$type": "dimension", "$value": "140px", "$description": "Section title / Thank you (105pt Regular)." },
+        "h1":       { "$type": "dimension", "$value": "100px", "$description": "Presentation title (75pt Regular)." },
+        "h2":       { "$type": "dimension", "$value": "80px", "$description": "Agenda, quote, statement (60pt Regular)." },
+        "title":    { "$type": "dimension", "$value": "76px", "$description": "Content slide title (57pt Regular)." },
+        "h3":       { "$type": "dimension", "$value": "64px", "$description": "Section list, agenda numbers (48pt)." },
+        "h4":       { "$type": "dimension", "$value": "48px", "$description": "Product title (35.6pt)." },
+        "h5":       { "$type": "dimension", "$value": "32px", "$description": "Names, agenda items, column subheads (24pt Medium)." },
+        "subhead":  { "$type": "dimension", "$value": "30px", "$description": "Card and column titles (22.8pt)." },
+        "bodyXl":   { "$type": "dimension", "$value": "24px", "$description": "Intro text (18pt)." },
+        "body":     { "$type": "dimension", "$value": "23px", "$description": "Bullets and running text (17.1pt)." },
+        "small":    { "$type": "dimension", "$value": "17px", "$description": "Card text, captions (12.8pt)." },
+        "label":    { "$type": "dimension", "$value": "16px", "$description": "Orange caps label, footer (12pt SemiBold)." },
+        "tiny":     { "$type": "dimension", "$value": "13px", "$description": "Meta labels, chips (10pt)." },
+        "number":   { "$type": "dimension", "$value": "133px", "$description": "Big KPI numbers (99.8pt Regular)." },
+        "numberSm": { "$type": "dimension", "$value": "95px", "$description": "KPI numbers inside cards (71pt)." }
+      }
+    },
+
+    "zIndex": {
+      "base": { "$type": "number", "$value": 0 },
+      "raised": { "$type": "number", "$value": 10 },
+      "sticky": { "$type": "number", "$value": 100 },
+      "overlay": { "$type": "number", "$value": 1000 },
+      "modal": { "$type": "number", "$value": 1100 },
+      "toast": { "$type": "number", "$value": 1200 }
+    }
+  },
+
+  "semantic": {
+    "color": {
+      "surface": {
+        "page":        { "$type": "color", "$value": "{primitive.color.white}" },
+        "band":        { "$type": "color", "$value": "{primitive.color.surfaceTint.band}", "$description": "Alternating light-blue section." },
+        "bandSoft":    { "$type": "color", "$value": "{primitive.color.surfaceTint.pale}" },
+        "card":        { "$type": "color", "$value": "{primitive.color.white}" },
+        "cardFooter":  { "$type": "color", "$value": "{primitive.color.surfaceTint.offWhite}" },
+        "inverse":     { "$type": "color", "$value": "{primitive.color.slate.700}", "$description": "Dark cards, footer, step pills, client band." },
+        "inverseDeep": { "$type": "color", "$value": "{primitive.color.brand.darkBlue}", "$description": "Print / logo-grade dark blue." },
+        "accent":      { "$type": "color", "$value": "{primitive.color.brand.orange}" }
+      },
+      "text": {
+        "heading":    { "$type": "color", "$value": "{primitive.color.slate.700}" },
+        "body":       { "$type": "color", "$value": "{primitive.color.ink}" },
+        "muted":      { "$type": "color", "$value": "{primitive.color.neutral.600}" },
+        "accent":     { "$type": "color", "$value": "{primitive.color.brand.orange}", "$description": "Subtitles, card titles, labels, highlighted words." },
+        "onInverse":  { "$type": "color", "$value": "{primitive.color.white}" },
+        "onAccent":   { "$type": "color", "$value": "{primitive.color.white}" },
+        "link":       { "$type": "color", "$value": "{primitive.color.brand.orange}" },
+        "linkHover":  { "$type": "color", "$value": "{primitive.color.orange.700}" }
+      },
+      "border": {
+        "subtle":  { "$type": "color", "$value": "{primitive.color.neutral.100}" },
+        "default": { "$type": "color", "$value": "{primitive.color.neutral.200}" },
+        "strong":  { "$type": "color", "$value": "{primitive.color.slate.700}" },
+        "accent":  { "$type": "color", "$value": "{primitive.color.brand.orange}" },
+        "focus":   { "$type": "color", "$value": "{primitive.color.brand.orange}" }
+      },
+      "action": {
+        "primary":        { "$type": "color", "$value": "{primitive.color.brand.orange}" },
+        "primaryHover":   { "$type": "color", "$value": "{primitive.color.orange.600}" },
+        "primaryActive":  { "$type": "color", "$value": "{primitive.color.orange.700}" },
+        "secondary":      { "$type": "color", "$value": "{primitive.color.slate.700}" },
+        "secondaryHover": { "$type": "color", "$value": "{primitive.color.brand.darkBlue}" },
+        "disabled":       { "$type": "color", "$value": "{primitive.color.neutral.200}" }
+      },
+      "icon": {
+        "default":   { "$type": "color", "$value": "{primitive.color.slate.700}" },
+        "onInverse": { "$type": "color", "$value": "{primitive.color.white}" },
+        "accent":    { "$type": "color", "$value": "{primitive.color.brand.orange}" }
+      },
+      "feedback": {
+        "success": { "$type": "color", "$value": "{primitive.color.feedback.success}" },
+        "danger":  { "$type": "color", "$value": "{primitive.color.feedback.danger}" },
+        "info":    { "$type": "color", "$value": "{primitive.color.blue.700}" }
+      },
+      "data": {
+        "$description": "Categorical order for charts and diagrams: slate first, orange as the highlight, then the extended palette.",
+        "1": { "$type": "color", "$value": "{primitive.color.slate.700}" },
+        "2": { "$type": "color", "$value": "{primitive.color.brand.orange}" },
+        "3": { "$type": "color", "$value": "{primitive.color.blue.600}" },
+        "4": { "$type": "color", "$value": "{primitive.color.green.500}" },
+        "5": { "$type": "color", "$value": "{primitive.color.orange.200}" },
+        "6": { "$type": "color", "$value": "{primitive.color.blue.300}" }
+      }
+    },
+    "radius": {
+      "control": { "$type": "dimension", "$value": "{primitive.radius.pill}", "$description": "Buttons, chips, tabs, step headers." },
+      "cardSm":  { "$type": "dimension", "$value": "{primitive.radius.sm}", "$description": "Elements below 200px." },
+      "card":    { "$type": "dimension", "$value": "{primitive.radius.md}", "$description": "Default card and image radius (Figma)." },
+      "cardLg":  { "$type": "dimension", "$value": "{primitive.radius.lg}", "$description": "Elements above 200px (brand guide)." },
+      "image":   { "$type": "dimension", "$value": "{primitive.radius.md}", "$description": "Photos always get rounded corners." }
+    },
+    "space": {
+      "sectionY":  { "$type": "dimension", "$value": "{primitive.space.12}", "$description": "Figma: 96px on all sides of every section." },
+      "sectionX":  { "$type": "dimension", "$value": "{primitive.space.12}" },
+      "stack":     { "$type": "dimension", "$value": "{primitive.space.3}", "$description": "Gap between title, subtitle and content (Figma 24)." },
+      "cardPad":   { "$type": "dimension", "$value": "{primitive.space.3}", "$description": "Figma 21.9 -> 24." },
+      "cardPadTop":{ "$type": "dimension", "$value": "{primitive.space.5}", "$description": "Figma 40.6 top padding above icon." },
+      "cardGap":   { "$type": "dimension", "$value": "{primitive.space.3}" },
+      "gridGap":   { "$type": "dimension", "$value": "{primitive.space.3}" },
+      "inline":    { "$type": "dimension", "$value": "{primitive.space.1}" }
+    }
+  },
+
+  "component": {
+    "button": {
+      "bg":            { "$type": "color", "$value": "{semantic.color.action.primary}" },
+      "bgHover":       { "$type": "color", "$value": "{semantic.color.action.primaryHover}" },
+      "bgActive":      { "$type": "color", "$value": "{semantic.color.action.primaryActive}" },
+      "text":          { "$type": "color", "$value": "{semantic.color.text.onAccent}" },
+      "outlineBorder": { "$type": "color", "$value": "{semantic.color.border.accent}" },
+      "outlineText":   { "$type": "color", "$value": "{semantic.color.text.accent}" },
+      "darkBg":        { "$type": "color", "$value": "{semantic.color.action.secondary}" },
+      "radius":        { "$type": "dimension", "$value": "{semantic.radius.control}" },
+      "padX":          { "$type": "dimension", "$value": "{primitive.space.4}" },
+      "padY":          { "$type": "dimension", "$value": "{primitive.space.2}" },
+      "height":        { "$type": "dimension", "$value": "48px" },
+      "fontSize":      { "$type": "dimension", "$value": "{primitive.font.size.bodySm}" },
+      "fontWeight":    { "$type": "fontWeight", "$value": "{primitive.font.weight.semibold}" }
+    },
+    "pill": {
+      "$description": "Step header / status pill (Figma: slate bg, white bold text, full radius, 11/37 padding on a 58px height).",
+      "bg":       { "$type": "color", "$value": "{semantic.color.surface.inverse}" },
+      "bgAccent": { "$type": "color", "$value": "{semantic.color.surface.accent}" },
+      "text":     { "$type": "color", "$value": "{semantic.color.text.onInverse}" },
+      "radius":   { "$type": "dimension", "$value": "{semantic.radius.control}" },
+      "padX":     { "$type": "dimension", "$value": "{primitive.space.4}" },
+      "padY":     { "$type": "dimension", "$value": "{primitive.space.1}" }
+    },
+    "chip": {
+      "$description": "White pill chips (data-provider chips, hero tabs).",
+      "bg":     { "$type": "color", "$value": "{semantic.color.surface.card}" },
+      "text":   { "$type": "color", "$value": "{semantic.color.text.heading}" },
+      "radius": { "$type": "dimension", "$value": "{semantic.radius.control}" },
+      "shadow": { "$type": "shadow", "$value": "{primitive.shadow.soft}" }
+    },
+    "card": {
+      "bg":         { "$type": "color", "$value": "{semantic.color.surface.card}" },
+      "footerBg":   { "$type": "color", "$value": "{semantic.color.surface.cardFooter}" },
+      "title":      { "$type": "color", "$value": "{semantic.color.text.accent}" },
+      "text":       { "$type": "color", "$value": "{semantic.color.text.body}" },
+      "meta":       { "$type": "color", "$value": "{semantic.color.text.heading}" },
+      "radius":     { "$type": "dimension", "$value": "{semantic.radius.card}" },
+      "pad":        { "$type": "dimension", "$value": "{semantic.space.cardPad}" },
+      "shadow":     { "$type": "shadow", "$value": "{primitive.shadow.card}" },
+      "inverseBg":  { "$type": "color", "$value": "{semantic.color.surface.inverse}" },
+      "inverseText":{ "$type": "color", "$value": "{semantic.color.text.onInverse}" }
+    },
+    "hero": {
+      "overlay":     { "$type": "string", "$value": "{primitive.gradient.fadeSlateUp}" },
+      "title":       { "$type": "color", "$value": "{semantic.color.text.onInverse}" },
+      "subtitle":    { "$type": "color", "$value": "{semantic.color.text.accent}" },
+      "titleShadow": { "$type": "shadow", "$value": "{primitive.shadow.textOnImage}" },
+      "padX":        { "$type": "dimension", "$value": "{primitive.space.12}" },
+      "padY":        { "$type": "dimension", "$value": "{primitive.space.5}" }
+    },
+    "section": {
+      "padY":      { "$type": "dimension", "$value": "{semantic.space.sectionY}" },
+      "padX":      { "$type": "dimension", "$value": "{semantic.space.sectionX}" },
+      "gap":       { "$type": "dimension", "$value": "{semantic.space.stack}" },
+      "title":     { "$type": "color", "$value": "{semantic.color.text.heading}" },
+      "subtitle":  { "$type": "color", "$value": "{semantic.color.text.accent}" },
+      "bgAlt":     { "$type": "color", "$value": "{semantic.color.surface.band}" },
+      "bgInverse": { "$type": "color", "$value": "{semantic.color.surface.inverse}" }
+    },
+    "label": {
+      "color":         { "$type": "color", "$value": "{semantic.color.text.accent}" },
+      "fontSize":      { "$type": "dimension", "$value": "{primitive.font.size.label}" },
+      "fontWeight":    { "$type": "fontWeight", "$value": "{primitive.font.weight.semibold}" },
+      "letterSpacing": { "$type": "dimension", "$value": "{primitive.font.letterSpacing.label}" }
+    },
+    "input": {
+      "bg":          { "$type": "color", "$value": "{semantic.color.surface.card}" },
+      "border":      { "$type": "color", "$value": "{semantic.color.border.default}" },
+      "borderFocus": { "$type": "color", "$value": "{semantic.color.border.focus}" },
+      "text":        { "$type": "color", "$value": "{semantic.color.text.body}" },
+      "placeholder": { "$type": "color", "$value": "{semantic.color.text.muted}" },
+      "radius":      { "$type": "dimension", "$value": "{semantic.radius.cardSm}" },
+      "height":      { "$type": "dimension", "$value": "48px" }
+    },
+    "slide": {
+      "$description": "Presentation slide surfaces and text roles.",
+      "bgLight":   { "$type": "color", "$value": "{primitive.color.brand.lightBlue}" },
+      "bgDark":    { "$type": "color", "$value": "{primitive.color.brand.darkBlue}" },
+      "bgAccent":  { "$type": "color", "$value": "{primitive.color.brand.orange}" },
+      "cardBg":    { "$type": "color", "$value": "{primitive.color.white}" },
+      "title":     { "$type": "color", "$value": "{primitive.color.brand.darkBlue}" },
+      "text":      { "$type": "color", "$value": "{primitive.color.slideText}" },
+      "textOnDark":{ "$type": "color", "$value": "{primitive.color.white}" },
+      "mutedOnDark":{ "$type": "color", "$value": "{primitive.color.slideMuted}" },
+      "label":     { "$type": "color", "$value": "{primitive.color.brand.orange}" },
+      "bullet":    { "$type": "color", "$value": "{primitive.color.brand.orange}" },
+      "hairline":  { "$type": "color", "$value": "rgba(44, 58, 66, 0.25)" },
+      "hairlineOnDark": { "$type": "color", "$value": "rgba(255, 255, 255, 0.25)" },
+      "photoOverlay": { "$type": "color", "$value": "rgba(44, 58, 66, 0.72)" },
+      "radius":    { "$type": "dimension", "$value": "{primitive.slide.radius}" }
+    },
+    "person": {
+      "$description": "Profile / people components (web and slides).",
+      "avatarSm": { "$type": "dimension", "$value": "48px" },
+      "avatar":   { "$type": "dimension", "$value": "86px" },
+      "avatarLg": { "$type": "dimension", "$value": "120px" },
+      "tileRadius": { "$type": "dimension", "$value": "{primitive.radius.md}" },
+      "name":     { "$type": "color", "$value": "{semantic.color.text.heading}" },
+      "role":     { "$type": "color", "$value": "{semantic.color.text.muted}" }
+    },
+    "tile": {
+      "$description": "3D product tile: rounded square top face (light tint gradient) sitting on a coloured gradient body with a soft glow.",
+      "radius":  { "$type": "dimension", "$value": "{primitive.radius.xl}" },
+      "shadow":  { "$type": "shadow", "$value": "{primitive.shadow.soft}" },
+      "glow":    { "$type": "shadow", "$value": "{primitive.shadow.glow}" }
+    }
+  }
+}

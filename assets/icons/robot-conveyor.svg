@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-3.00 -3.05 106.10 106.10" fill="none" stroke="currentColor" aria-hidden="true">
+<g>
+<circle cx="18.5646" cy="82.633" r="5.26775" stroke="currentColor" stroke-width="6"/>
+<circle cx="50.4951" cy="82.633" r="5.26775" stroke="currentColor" stroke-width="6"/>
+<circle cx="82.7377" cy="82.633" r="5.26775" stroke="currentColor" stroke-width="6"/>
+<rect x="3" y="69.0886" width="94.0972" height="26.88" rx="13.44" stroke="currentColor" stroke-width="6"/>
+<rect x="52.3311" y="46.0688" width="26.3641" height="23.0197" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+<rect x="17.1511" y="46.0688" width="26.3641" height="23.0197" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+<g>
+<path d="M60.5591 3.91818C64.6175 3.91818 67.9075 7.20819 67.9075 11.2666L67.9075 17.5587C67.9075 21.6171 64.6175 24.9072 60.5591 24.9072L39.3815 24.9072C35.3231 24.9072 32.0331 21.6171 32.0331 17.5587L32.0331 11.2666C32.0331 7.20819 35.3231 3.91818 39.3815 3.91818L60.5591 3.91818Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+<path d="M58.1255 24.9087L63.7974 35.9964L36.3665 35.9964L42.2618 24.9087L58.1255 24.9087Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

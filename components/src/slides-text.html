@@ -1,0 +1,87 @@
+<!-- @dsCard group="Slides" title="Text, bullets & columns" subtitle="Title + intro + orange-dash bullets, image + text, 2-4 columns, numbered columns" width="1000" -->
+<div class="ds-page">
+<section class="ds-section" style="gap: var(--tf-space-3)">
+  <div class="ds-stack" style="gap: 8px">
+    <p class="ds-label">Slides · text</p>
+    <h2 class="ds-h2">Text, bullets &amp; columns</h2>
+    <p class="ds-body-sm">Content skeleton: label (y72), title 76px Regular (y141), intro 23px indented 64px, body from y381. Bullets are a 60×3 orange dash with 90px text indent. Columns use 64px gutters with a 30px subhead over 23px text; numbered columns add a Poppins Light 64px orange number.</p>
+  </div>
+
+  <div class="slide-stack">
+    <div class="slide-frame"><div class="slide">
+      <p class="slide__label">Label</p>
+      <h2 class="s-title slide__title">Title</h2>
+      <p class="s-body slide__intro">Consectetur eligendi dolorem illo quaerat voluptatibus facilis earum quibusdam sint hic non doloribus ullam ad. Qui dolor aut velit iusto quia consectetur sit aut.</p>
+      <div class="slide__body">
+        <ul class="s-bullets">
+          <li>Debitis voluptate enim laudantium qui labore unde. Est voluptas illo numquam.</li>
+          <li>Error qui eligendi qui et corrupti occaecati qui tenetur totam et iste assumenda cumque. At natus ex libero assumenda qui sunt tenetur qui.</li>
+          <li>In iusto accusamus numquam doloribus eaque pariatur nam aut labore tempore sint magni officiis. Nihil quis nemo est ut.</li>
+          <li>Et id dolorum nemo in non dolore exercitationem aut reiciendis nihil voluptatem. Ipsa atque qui placeat modi est perferendis expedita quis iusto ut.</li>
+        </ul>
+      </div>
+      <div class="slide__logo">{{logo}}</div>
+    </div></div>
+    <p class="slide-caption">Title + bullets · light (dark variant: same with white title, #D5D7DA text)</p>
+
+    <div class="slide-frame"><div class="slide">
+      <p class="slide__label">Label</p>
+      <h2 class="s-title slide__title">Title</h2>
+      <p class="s-body slide__intro" style="max-width: 830px">Debitis voluptate enim laudantium qui labore unde. Est voluptas illo numquam.</p>
+      <div class="slide__body" style="max-width: 958px">
+        <ul class="s-bullets">
+          <li>Debitis voluptate enim laudantium qui labore unde. Est voluptas illo numquam.</li>
+          <li>Error qui eligendi qui et corrupti occaecati qui tenetur totam et iste assumenda cumque. At natus ex libero assumenda qui sunt tenetur qui.</li>
+          <li>In iusto accusamus numquam doloribus eaque pariatur nam aut labore tempore sint magni officiis.</li>
+        </ul>
+      </div>
+      <img src="{{bokeh:3}}" alt="" style="position:absolute; right:80px; top:84px; width:720px; height:912px; object-fit:cover; border-radius: var(--tf-slide-radius)">
+      <div class="slide__logo">{{logo}}</div>
+    </div></div>
+    <p class="slide-caption">Image + text · photo 720×912 rounded 44, right (mirrored variant exists)</p>
+
+    <div class="slide-frame"><div class="slide">
+      <p class="slide__label">Label</p>
+      <h2 class="s-title slide__title">Title</h2>
+      <div class="slide__body">
+        <div class="s-columns" style="--cols: 3">
+          <div class="s-col"><h3 class="s-subhead">Maxime Velit Expedita</h3><p class="s-body">Quos voluptatem rerum vel. Illum iste nemo assumenda nesciunt voluptatum saepe ut dolorum repudiandae vel optio ullam temporibus occaecati qui.</p></div>
+          <div class="s-col"><h3 class="s-subhead">Consequatur Ut Et</h3><p class="s-body">Quaerat quaerat et et dolor in quidem illo qui fuga. Facere sint accusantium id. Quo rerum rem delectus voluptas harum non veritatis saepe cumque.</p></div>
+          <div class="s-col"><h3 class="s-subhead">Alias Maiores Facere</h3><p class="s-body">Id quisquam voluptatum ex iure omnis cupiditate et voluptates eum ut exercitationem. Dolor qui similique perspiciatis voluptatem ea blanditiis eum.</p></div>
+        </div>
+      </div>
+      <div class="slide__logo">{{logo}}</div>
+    </div></div>
+    <p class="slide-caption">Three columns (1-4 columns in the template)</p>
+
+    <div class="slide-frame"><div class="slide">
+      <p class="slide__label">Label</p>
+      <h2 class="s-title slide__title">Title</h2>
+      <div class="slide__body slide__body--end">
+        <div class="s-columns" style="--cols: 3">
+          <div class="s-col"><p class="s-num">01</p><h3 class="s-subhead">Maxime Velit Expedita</h3><p class="s-body">Quos voluptatem rerum vel. Illum iste nemo assumenda nesciunt voluptatum saepe ut dolorum repudiandae vel optio ullam.</p></div>
+          <div class="s-col"><p class="s-num">02</p><h3 class="s-subhead">Consequatur Ut Et</h3><p class="s-body">Quaerat quaerat et et dolor in quidem illo qui fuga. Facere sint accusantium id. Quo rerum rem delectus voluptas.</p></div>
+          <div class="s-col"><p class="s-num">03</p><h3 class="s-subhead">Alias Maiores Facere</h3><p class="s-body">Id quisquam voluptatum ex iure omnis cupiditate et voluptates eum ut exercitationem. Dolor qui similique.</p></div>
+        </div>
+      </div>
+      <div class="slide__logo">{{logo}}</div>
+    </div></div>
+    <p class="slide-caption">Numbered columns · content sits at the bottom of the slide</p>
+
+    <div class="slide-frame"><div class="slide">
+      <p class="slide__label">Content example</p>
+      <h2 class="s-title slide__title">Bullet lists</h2>
+      <div class="slide__body">
+        <div class="s-columns" style="--cols: 4">
+          <div class="s-col"><p class="s-small" style="color:var(--s-title)">XL</p><ul class="s-bullets s-bullets--xl"><li>Debitis voluptate enim laudantium qui labore unde.</li><li>Error qui eligendi qui et corrupti occaecati qui tenetur.</li></ul></div>
+          <div class="s-col"><p class="s-small" style="color:var(--s-title)">Large</p><ul class="s-bullets"><li>Debitis voluptate enim laudantium qui labore unde.</li><li>Error qui eligendi qui et corrupti occaecati qui tenetur totam.</li><li>In iusto accusamus numquam doloribus eaque pariatur.</li></ul></div>
+          <div class="s-col"><p class="s-small" style="color:var(--s-title)">Medium</p><ul class="s-bullets s-bullets--sm" style="--x:1"><li style="font-size:20px">Debitis voluptate enim laudantium qui labore unde.</li><li style="font-size:20px">Error qui eligendi qui et corrupti occaecati qui tenetur totam.</li><li style="font-size:20px">In iusto accusamus numquam doloribus eaque pariatur nam.</li></ul></div>
+          <div class="s-col"><p class="s-small" style="color:var(--s-title)">Small</p><ul class="s-bullets s-bullets--sm"><li>Debitis voluptate enim laudantium qui labore unde.</li><li>Error qui eligendi qui et corrupti occaecati qui tenetur totam et iste.</li><li>In iusto accusamus numquam doloribus eaque pariatur nam aut labore.</li><li>Et id dolorum nemo in non dolore exercitationem aut reiciendis.</li></ul></div>
+        </div>
+      </div>
+      <div class="slide__logo">{{logo}}</div>
+    </div></div>
+    <p class="slide-caption">Bullet sizes · XL 24, Large 23, Medium 20, Small 17</p>
+  </div>
+</section>
+</div>

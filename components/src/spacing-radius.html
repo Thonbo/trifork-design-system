@@ -1,0 +1,46 @@
+<!-- @dsCard group="Foundations" title="Spacing & corner radius" subtitle="8px grid, 12/20/24px radii, pill controls" width="960" -->
+<div class="ds-page">
+<section class="ds-section" style="gap: var(--tf-space-4)">
+  <div class="ds-stack" style="gap: 8px">
+    <p class="ds-label">Spacing &amp; corner radius</p>
+    <h2 class="ds-h2">Everything on an 8px grid</h2>
+    <p class="ds-body">Spacing for components and typography is done in increments of 8px. Sections get 96px on every side, stacks and grids 24px, inline groups 8px.</p>
+  </div>
+
+  <div class="ds-stack" style="gap: 12px">
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-05 · 4px</small><div style="height:16px;width:4px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-1 · 8px</small><div style="height:16px;width:8px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-2 · 16px</small><div style="height:16px;width:16px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-3 · 24px</small><div style="height:16px;width:24px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-4 · 32px</small><div style="height:16px;width:32px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-5 · 40px</small><div style="height:16px;width:40px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-6 · 48px</small><div style="height:16px;width:48px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-8 · 64px</small><div style="height:16px;width:64px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-10 · 80px</small><div style="height:16px;width:80px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-12 · 96px</small><div style="height:16px;width:96px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+    <div style="display:flex;align-items:center;gap:16px"><small style="width:120px;font-family:var(--tf-font-family-mono);font-size:11px">space-16 · 128px</small><div style="height:16px;width:128px;background:var(--tf-color-brand-orange);border-radius:2px"></div></div>
+  </div>
+
+  <div class="ds-stack" style="gap: 8px">
+    <h3 class="ds-h3">Corner radius</h3>
+    <p class="ds-body-sm">Brand rule: <b>12px</b> for elements below 200px, <b>24px</b> above. In practice Figma cards sit at <b>20px</b>, and every control (button, chip, tab, step header) is a full pill. Photos always get rounded corners.</p>
+  </div>
+  <div class="ds-grid" style="grid-template-columns: repeat(6, 1fr); align-items:end">
+    <div style="text-align:center"><div style="height:72px;background:var(--tf-color-surface-band);border-radius:var(--tf-radius-xs);border-top:3px solid var(--tf-color-brand-orange);border-left:3px solid var(--tf-color-brand-orange)"></div><small class="ds-caption">xs · 4px<br>tiny squares</small></div>
+    <div style="text-align:center"><div style="height:72px;background:var(--tf-color-surface-band);border-radius:var(--tf-radius-sm);border-top:3px solid var(--tf-color-brand-orange);border-left:3px solid var(--tf-color-brand-orange)"></div><small class="ds-caption">sm · 12px<br>&lt; 200px</small></div>
+    <div style="text-align:center"><div style="height:72px;background:var(--tf-color-surface-band);border-radius:var(--tf-radius-md);border-top:3px solid var(--tf-color-brand-orange);border-left:3px solid var(--tf-color-brand-orange)"></div><small class="ds-caption">md · 20px<br>cards, images</small></div>
+    <div style="text-align:center"><div style="height:72px;background:var(--tf-color-surface-band);border-radius:var(--tf-radius-lg);border-top:3px solid var(--tf-color-brand-orange);border-left:3px solid var(--tf-color-brand-orange)"></div><small class="ds-caption">lg · 24px<br>&gt; 200px</small></div>
+    <div style="text-align:center"><div style="height:72px;background:var(--tf-color-surface-band);border-radius:var(--tf-radius-xl);border-top:3px solid var(--tf-color-brand-orange);border-left:3px solid var(--tf-color-brand-orange)"></div><small class="ds-caption">xl · 28px<br>3D tiles</small></div>
+    <div style="text-align:center"><div style="height:72px;background:var(--tf-color-surface-inverse);border-radius:var(--tf-radius-pill)"></div><small class="ds-caption">pill · 999px<br>controls</small></div>
+  </div>
+
+  <div class="ds-stack" style="gap: 8px">
+    <h3 class="ds-h3">Applied</h3>
+  </div>
+  <div class="ds-grid" style="grid-template-columns: 1fr 1fr 1fr; align-items:start">
+    <div class="card"><div class="card__body"><p class="ds-caption">card · radius 20 · padding 24 · gap 16</p><h4 class="card__title">Lab test</h4><p class="card__text">Before touching your line, we run tests on our side.</p></div></div>
+    <div class="step"><span class="pill">Step 1</span><div class="card"><div class="card__body card__body--centered"><p class="ds-caption">pill header + card · gap 16</p></div></div></div>
+    <div class="ds-stack"><span class="chip">Product data</span><span class="chip">Order history</span><p class="ds-caption">chips · pill · 8/24 padding</p></div>
+  </div>
+</section>
+</div>

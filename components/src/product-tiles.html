@@ -1,0 +1,51 @@
+<!-- @dsCard group="Content" title="Product tiles & diagrams" subtitle="3D gradient tiles (blue / green / purple), MCP stack diagram, proof-in-production bars" width="960" -->
+<div class="ds-page">
+<section class="ds-section ds-section--centered" style="gap: var(--tf-space-5)">
+  <div class="ds-stack" style="gap: 4px; align-items:center">
+    <p class="ds-label">Content</p>
+    <h2 class="ds-h2">The products</h2>
+    <p class="ds-body-sm" style="max-width: 640px">Isometric tiles: a light tinted top face with a line icon, sitting on a coloured gradient body with a soft slate glow. One colour family per product line. CSS approximation shown; the Figma originals are vector.</p>
+  </div>
+  <div class="ds-grid" style="grid-template-columns: repeat(3, 1fr); width:100%">
+    <div><div class="tile tile--blue"><div class="tile__body"></div><div class="tile__top"><span class="icon icon--hero" style="color:inherit">{{icon:search-gear}}</span></div></div><p class="tile__label">Quality management</p></div>
+    <div><div class="tile tile--green"><div class="tile__body"></div><div class="tile__top"><span class="icon icon--hero" style="color:inherit">{{icon:conveyor}}</span></div></div><p class="tile__label">Asset inspection &amp; Monitoring</p></div>
+    <div><div class="tile tile--purple"><div class="tile__body"></div><div class="tile__top"><span class="icon icon--hero" style="color:inherit">{{icon:hands-heart-care}}</span></div></div><p class="tile__label">Safety</p></div>
+  </div>
+</section>
+
+<section class="ds-section bg-bokeh-img" style="background-image:url('{{bokeh:1}}'); gap: var(--tf-space-3); align-items:center">
+  <p class="ds-h3" style="font-weight:400">"Talk to your data"</p>
+  <div class="card" style="width: 480px"><div class="card__body" style="align-items:center; gap: 4px"><div class="ds-row" style="gap: 12px"><span class="icon icon--lg">{{icon:user}}</span><span class="ds-h2">AI Agent ( LLM )</span></div><p class="card__text" style="font-weight:700">The User / Autonomous</p></div></div>
+  <span style="color: var(--tf-color-brand-orange); font-size: 28px; font-weight: 700; line-height:1">↑↓</span>
+  <div class="card card--inverse" style="width: 480px"><div class="card__body" style="align-items:center; gap: 4px"><div class="ds-row" style="gap: 12px"><span class="icon icon--lg" style="color:#fff">{{icon:perspective-image}}</span><span class="ds-h2" style="color:#fff">MCP Protocol</span></div><p class="card__text" style="font-weight:400; font-size: 20px">Data translator</p></div></div>
+  <span style="color: var(--tf-color-brand-orange); font-size: 28px; font-weight: 700; line-height:1">↑↓</span>
+  <div class="ds-row" style="gap: 12px"><span class="icon icon--lg">{{icon:server-stack}}</span><span class="ds-h2">Data provider</span></div>
+  <div class="ds-row" style="gap: 12px; justify-content:center; max-width: 720px"><span class="chip">Product data</span><span class="chip">Stock</span><span class="chip">Order history</span><span class="chip">Planning</span><span class="chip">Communication</span><span class="chip">Payment</span><span class="chip">Account data</span><span class="chip">ERP</span></div>
+</section>
+
+<section class="ds-section" style="gap: var(--tf-space-3)">
+  <div class="ds-stack" style="gap: 4px; align-items:center; text-align:center">
+    <h2 class="ds-h2" style="color: var(--tf-color-ink)">Proof-in-production approach</h2>
+    <p class="ds-h3" style="font-weight:400; color: var(--tf-color-text-heading)">Validation means risk reduction + faster value creation</p>
+  </div>
+  <div class="ds-row" style="gap: 32px; justify-content:center">
+    <span style="display:inline-flex;align-items:center;gap:12px;font-weight:600;color:var(--tf-color-text-heading)"><span style="width:32px;height:32px;border-radius:10px;background:var(--tf-color-brand-orange)"></span>Development &amp; Testing</span>
+    <span style="display:inline-flex;align-items:center;gap:12px;font-weight:600;color:var(--tf-color-text-heading)"><span style="width:32px;height:32px;border-radius:10px;background:repeating-linear-gradient(135deg,#425663 0 5px,#5A6E7B 5px 10px)"></span>Improvements &amp; Value</span>
+  </div>
+  <div style="display:grid; grid-template-columns: 1fr auto 1fr; gap: 32px; align-items:end">
+    <div style="display:flex; align-items:flex-end; gap: 12px; height: 220px; border-left: 2px solid var(--tf-color-text-heading); border-bottom: 2px solid var(--tf-color-text-heading); padding: 0 12px 0 16px">
+      <div style="flex: 3; height: 70%; background: var(--tf-color-brand-orange); border-radius: 12px"></div>
+      <div style="width: 4px; height: 76%; border-left: 4px dotted var(--tf-color-brand-orange)"></div>
+      <div style="flex: 1; height: 70%; background: repeating-linear-gradient(135deg,#425663 0 10px,#5A6E7B 10px 20px); border-radius: 12px; mask-image: linear-gradient(90deg, #000 60%, transparent)"></div>
+    </div>
+    <span class="pill" style="width:56px;height:56px;padding:0;border-radius:50%;font-size:16px">VS</span>
+    <div style="display:flex; align-items:flex-end; gap: 12px; height: 220px; border-left: 2px solid var(--tf-color-text-heading); border-bottom: 2px solid var(--tf-color-text-heading); padding: 0 12px 0 16px">
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-end; border-radius: 12px; overflow:hidden; height: 35%"><div style="flex:1; background: repeating-linear-gradient(135deg,#425663 0 10px,#5A6E7B 10px 20px)"></div><div style="height: 40%; background: var(--tf-color-brand-orange)"></div></div>
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-end; border-radius: 12px; overflow:hidden; height: 60%"><div style="flex:1; background: repeating-linear-gradient(135deg,#425663 0 10px,#5A6E7B 10px 20px)"></div><div style="height: 45%; background: var(--tf-color-brand-orange)"></div></div>
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-end; border-radius: 12px; overflow:hidden; height: 85%"><div style="flex:1; background: repeating-linear-gradient(135deg,#425663 0 10px,#5A6E7B 10px 20px)"></div><div style="height: 55%; background: var(--tf-color-brand-orange)"></div></div>
+      <div style="flex:1; height: 100%; background: repeating-linear-gradient(135deg,#425663 0 10px,#5A6E7B 10px 20px); border-radius: 12px; mask-image: linear-gradient(90deg, #000 50%, transparent)"></div>
+    </div>
+  </div>
+  <p class="ds-caption" style="text-align:center">Bars: orange = development, hatched slate = value; radius 12; dotted orange divider marks each validation gate; the last bar fades out to the right.</p>
+</section>
+</div>

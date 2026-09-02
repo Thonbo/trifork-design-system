@@ -1,0 +1,40 @@
+<!-- @dsCard group="Actions" title="Buttons" subtitle="Primary, outline label, dark, ghost, on-dark · 3 sizes · states" width="960" -->
+<div class="ds-page">
+<section class="ds-section" style="gap: var(--tf-space-4)">
+  <div class="ds-stack" style="gap: 8px">
+    <p class="ds-label">Actions</p>
+    <h2 class="ds-h2">Buttons</h2>
+    <p class="ds-body">Always a pill. One orange primary per view. The brand guide's "DOWNLOAD" button is the outline variant: orange hairline, orange caps label with 15% tracking.</p>
+  </div>
+
+  <div class="ds-row" style="gap: 16px">
+    <button class="btn btn--primary">Book a walk-the-line</button>
+    <button class="btn btn--outline">Download</button>
+    <button class="btn btn--dark">See the process</button>
+    <button class="btn btn--ghost">Learn more</button>
+    <button class="btn btn--primary" disabled>Disabled</button>
+  </div>
+
+  <div class="ds-row" style="gap: 16px; align-items:center">
+    <button class="btn btn--primary btn--sm">Small · 40</button>
+    <button class="btn btn--primary">Default · 48</button>
+    <button class="btn btn--primary btn--lg">Large · 56</button>
+    <button class="btn btn--primary"><span class="icon icon--sm" style="color:currentColor">{{icon:download-tray}}</span>With icon</button>
+    <button class="btn btn--outline"><span class="icon icon--sm" style="color:currentColor">{{icon:refresh}}</span>Refresh</button>
+  </div>
+
+  <div class="ds-grid" style="grid-template-columns: repeat(3, 1fr); gap: 16px">
+    <div class="ds-stack" style="gap: 8px; align-items:flex-start"><small class="ds-caption">hover</small><button class="btn btn--primary" style="background: var(--tf-c-button-bg-hover)">Primary</button><button class="btn btn--outline" style="background: var(--tf-color-orange-50)">Download</button></div>
+    <div class="ds-stack" style="gap: 8px; align-items:flex-start"><small class="ds-caption">active</small><button class="btn btn--primary" style="background: var(--tf-c-button-bg-active); transform: translateY(1px)">Primary</button><button class="btn btn--dark" style="background: var(--tf-color-action-secondary-hover)">Dark</button></div>
+    <div class="ds-stack" style="gap: 8px; align-items:flex-start"><small class="ds-caption">focus-visible</small><button class="btn btn--primary" style="outline: 3px solid var(--tf-color-border-focus); outline-offset: 3px">Primary</button></div>
+  </div>
+
+  <div class="ds-section--inverse" style="border-radius: var(--tf-radius-md); padding: var(--tf-space-4); display:flex; gap:16px; flex-wrap:wrap; align-items:center">
+    <button class="btn btn--primary">Primary on dark</button>
+    <button class="btn btn--on-dark">White on dark</button>
+    <button class="btn btn--ghost" style="color:#fff">Ghost on dark</button>
+  </div>
+
+  <p class="ds-caption">Spec: height 48 · padding 0 32 · Poppins SemiBold 16 · radius pill · transition 200ms · focus ring 3px orange, offset 3px · min hit target 44px.</p>
+</section>
+</div>

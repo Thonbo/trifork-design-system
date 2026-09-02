@@ -1,0 +1,46 @@
+{
+  "name": "@trifork/design-system",
+  "version": "0.1.0",
+  "description": "Trifork design system: tokens, base CSS, slide layouts, icons, fonts and Claude Design previews",
+  "license": "UNLICENSED",
+  "type": "module",
+  "repository": { "type": "git", "url": "https://github.com/trifork/design-system.git" },
+  "homepage": "https://brand.trifork.com",
+  "files": [
+    "DESIGN.md",
+    "design-tokens.json",
+    "tokens",
+    "assets",
+    "components",
+    "_ds_manifest.json"
+  ],
+  "exports": {
+    ".": "./tokens/tokens.js",
+    "./tokens": "./tokens/tokens.js",
+    "./tokens.json": "./design-tokens.json",
+    "./tokens.css": "./tokens/tokens.css",
+    "./base.css": "./tokens/base.css",
+    "./slides.css": "./tokens/slides.css",
+    "./fonts.css": "./tokens/fonts.css",
+    "./tailwind": "./tokens/tailwind.preset.cjs",
+    "./icons/*": "./assets/icons/*",
+    "./logo/*": "./assets/logo/*",
+    "./backgrounds/*": "./assets/backgrounds/*",
+    "./fonts/*": "./assets/fonts/*",
+    "./DESIGN.md": "./DESIGN.md",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs",
+    "storybook": "npm run build && storybook dev -p 6006",
+    "build-storybook": "npm run build && storybook build -o storybook-static",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": { "access": "public" },
+  "devDependencies": {
+    "@storybook/html-vite": "^10.5.10",
+    "storybook": "^10.5.10",
+    "vite": "^7.1.0"
+  }
+}
