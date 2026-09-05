@@ -4,3 +4,10 @@ storybook-static/
 *.pptx
 .DS_Store
 *.log
+
+# Miljøfiler — må aldrig committes. Skabeloner uden hemmeligheder beholdes.
+.env
+.env.*
+!.env*.example
+!.env*.sample
+!.env*.template
